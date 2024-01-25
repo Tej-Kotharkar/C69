@@ -1,81 +1,83 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>School Website</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 
-<body style="background-color: aqua;">
+<body>
 
-  <nav class="navbar-inverse my_nav_bar">
+<nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
+
     <div class="navbar-header">
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a class="navbar-brand" href="https://tej-kotharkar.github.io/C57/">Tej Kotharkar</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Perter Parker</a>
     </div>
+    
     <div class="collapse navbar-collapse" id="myNavbar">
-<ul class="nav navbar-nav">
-    <li><a href="#schoolname">School</a></li>
-    <li><a href="#aboutus">About us</a></li>
-    <li><a href="#whatsnew">What's New</a></li>
-    <li><a href="#contact">CONTACT</a></li>
-</ul>
+      <ul class="nav navbar-nav">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#videos">VIDEOS</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#writing">WRITING</a></li>
+        <li><a href="#blog">BLOG</a></li>
+      </ul>
     </div>
-</nav>
-<center>
-<section id="schoolname">
-<h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">AMRITA VIDYALAYAM</h1>
-<br>
-<img src="data:image/jpeg;base64,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">
-</section>
-<br>
-<br>
-<br>
-<br>
-<br>
-<section id="aboutus">
-  <h2 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">About Us</h2>
-  <br>
-  <br>
-  <b class="text-muted"style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Amrita Vidyalayams are value based educational institutions established and managed by Mata Amritanandamayi Math in an endeavour to deliver accessible and quality education. Excellence in everything is our motto. All Amrita Vidyalayams are under the care of Amma's boundless love and compassion.</b>
-</section>
-<br>
-<br>
-<br>
-<br>
-<br>
-<section id="whatsnew"style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
-  <h1>What's New</h1>
-  <b class="text-muted">Amrita Vidyalayams, a national network of value based schools are managed by Mata Amritanandamayi Math, under the guidance of Amma.  The Amrita Vidyalayams were begun with the purpose of serving the specific needs of the student community.</b>
-</section>
-<br>
-<br>
-<br>
-<br>
-<br>
-<section id="contact"style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
-  <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif;" >Contact</h1>
-<b style="font-family:Verdana, Geneva, Tahoma, sans-serif;" class="text-muted">PHONE:08382 266598</b>
-<br>
-<button style="background-color: aqua;"   class="fa fa-facebook"></button>
- <p class="text-muted">https://www.facebook/amritavidyalayam.karwar.3</p>
-</section>
-</center>
-</body>
 
+</nav>
+  
+<!--
+Start coding from here
+-->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <section id="contact">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15078.353856082635!2d72.8906491!3d19.1257017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacf72f56793d190a!2sWHITEHAT%20EDUCATION%20TECHNOLOGY%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1573468987088!5m2!1sen!2sin" height="450" frameborder="0"  allowfullscreen=""></iframe>
+
+
+        <div class="contact_1" >
+
+           <a href="mailto:my@gmail.com?Subject=Hi">
+               <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;mygmailid@gmail.com</h5>
+            </a> 
+
+           <a href="#"> 
+               <h5><i class="fa fa-instagram" ></i>&nbsp;&nbsp;myinstagramid</h5>
+            </a> 
+        </div>
+</section>
+
+
+</body>
 </html>
